@@ -4,9 +4,9 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!-- 	<bean id="insaBean" class="insa.Insa" p:name="홍길동">
-	</bean> -->
+<!-- 	<bean id="insaBean" class="insa.Insa" p:name="홍길동"></bean> -->
 		<!-- <property name="name" value="홍길동"/> jsp:setProperty . setName("홍길동") -->
-		<bean id="insaBean" class="insa.Insa" p:name="홍길동" p:age="35">
-		</bean>
+		<bean id="insaBean" class="insa.Insa" p:name="홍길동" p:age="35"></bean>
+		<bean id="setterBean" class="setter.Setter"   p:insa-ref="insaBean"> </bean>  
+		
 </beans>
