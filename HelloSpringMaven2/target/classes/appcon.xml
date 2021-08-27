@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="sawonBean1" class="sawonpkg.Sawon"/><!--  Sawon sawonBean1 = nwe Sawon(); 기본이 싱글톤-->
+<bean id="sawonBean2" class="sawonpkg.Sawon" scope="prototype"/> <!--위 둘은 자동으로 singleton으로 인식  -->
+
+</beans>
