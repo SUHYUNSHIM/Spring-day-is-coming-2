@@ -55,5 +55,21 @@ public class HomeController {
 		
 		return "total";
 	}
+	/*
+	 * @RequestMapping(value="/kyesan", method= RequestMethod.POST)
+	 * public String kaja(Model model, HtppServletRequest req){
+	 * 
+	 * Strng irum = req.getParameter("irum");
+	 * int javajum = Integer.parseInt(req.getParameter("javajum"));
+	 * int uijum = Integer.parseInt(req.getParameter("uijum"));
+	 * int sqljum = Integer.parseIng(req.getParameter("sqljum"));
+	 * int tot = javajum + uijum+sqljum;
+	 * int avg = tot/3;
+	 * model.addAttribute("mirum",irum);
+	 * model.addAttribute("mtot",tot);
+	 * model.addAttribute("mavg",avg);
+	 * return "kaja"; // kaja.jsp
+	 * 
+	 * */
 	
 }
