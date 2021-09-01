@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Handles requests for the application home page.
@@ -53,6 +54,25 @@ public class HomeController {
 		model.addAttribute("mirum",irum);
 		
 		return "kaja"; //반환
+	}
+	
+	//메소드. 소스의 어디에 들어가도 상관없다. moyamota 추가.
+	@RequestMapping(value="/moyamoya.do", method= RequestMethod.POST)
+	public String kaja2(@RequestParam(value="irum", defaultValue="") String irumResult, Model model) {
+		if(irumResult.equals("") || irumResult == null) {
+			return "kajaError";
+			//넘어오는 irum이 없으면 false가 들어가면서 kajaError.jsp 에러 파일로 간다.
+		}
+		model.addAttribute("mirum",irumResult);
+		return "kaja";
+	}
+	@RequestMapping(value="/moyamoya2.do", method=RequestMethod.POST)
+	public String kaja3(@RequestParam(value="irum") String irumResult,
+						@RequestParam(value="tel", defaultValue="") String telResult, Model model){
+	
+		model.addAttribute("mirum",irumResult);
+		model.addAttribute("mtel",telResult);
+		return "kaja2";
 	}
 	
 }
