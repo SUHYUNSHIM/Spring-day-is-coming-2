@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> 당신의 이름은 ${n_irum}</h1>
+<h1>사원 관리 시작</h1> <hr>
+<script>
+	location.href="getAllTelinfo.do"
+</script>
 </body>
 </html>

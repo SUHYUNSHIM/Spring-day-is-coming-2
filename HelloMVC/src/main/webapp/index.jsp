@@ -16,5 +16,9 @@
 전화번호<input type=text name="tel">
 	<input type=submit value="가자 서버로">
 </form>
+<!-- <h1>사원 관리 시작</h1> <hr>
+<script>
+	location.href="getAllTelinfo.do"
+</script> -->
 </body>
 </html>
