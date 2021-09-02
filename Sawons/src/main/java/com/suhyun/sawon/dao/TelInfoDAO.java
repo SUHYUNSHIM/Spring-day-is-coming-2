@@ -46,7 +46,7 @@ public class TelInfoDAO {
     //한명 출력. 위의 getAllTelinfo는 전체 출력.
     public TelInfoVO getTelinfo(TelInfoVO vo1) throws SQLException{ //전달도 객체 단위, getTelinfo는 한 명 처리
     	TelInfoVO telinfo = null;
-    	String sql = "select * from teltable5 where name= ?";
+    	String sql = "select * from teltable55 where name= ?";
     	pstmt = con.prepareStatement(sql);
     	pstmt.setString(1, vo1.getName());
     	rs = pstmt.executeQuery();
@@ -58,7 +58,7 @@ public class TelInfoDAO {
     	return telinfo;
     }
     public void updateTelinfo(TelInfoVO vo1) throws SQLException, ClassNotFoundException{
-    	String sql = "update TelTable5 set id=?, tel=? where name=?";
+    	String sql = "update TelTable55 set id=?, tel=? where name=?";
     	pstmt.setInt(1, vo1.getId()); //이걸로 id=? 에 넣는다 
         pstmt.setString(2, vo1.getTel());
         pstmt.setString(3, vo1.getName());
@@ -67,7 +67,7 @@ public class TelInfoDAO {
     }
     
     public void insertTelinfo(TelInfoVO vo1) throws SQLException{
-    	String sql = "insert into teltable5 values(?,?,?)";
+    	String sql = "insert into teltable55 values(?,?,?)";
     	pstmt = con.prepareStatement(sql);
     	pstmt.setInt(1, vo1.getId());
     	pstmt.setString(2, vo1.getName());

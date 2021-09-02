@@ -44,5 +44,13 @@ public class SawonController {
 		 telInfoService.deleteTelinfo(vo1);
 		 return "redirect:getAllTelinfo.do";
 	 }
+	 
+	 @RequestMapping("/insertTelinfo.do")
+		public String sawonInsertTelinfo(TelInfoVO vo1) 
+				                          throws ClassNotFoundException, SQLException {
+			telInfoService.insertTelinfo(vo1);
+			
+			return "redirect:getAllTelinfo.do"; 
+	}
                                           
 }
