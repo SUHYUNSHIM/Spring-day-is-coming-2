@@ -13,7 +13,7 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<!--한글 filter -------------------------------------------------------------------  -->
+	<!-- 한글필터 -->
 	 <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>
@@ -32,7 +32,7 @@
     	<filter-name>encodingFilter</filter-name>
     	<url-pattern>*.do</url-pattern>
  	 </filter-mapping>
-		<!--한글 filter -------------------------------------------------------------------  -->
+	<!-- 한글필터 -->	
 		
 	<!-- Processes application requests -->
 	<servlet>
