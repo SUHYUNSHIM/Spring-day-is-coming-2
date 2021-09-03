@@ -34,7 +34,7 @@
 	</c:forEach>
 	<table border=0>
 		<tr>
-			<td><a href="sawonInsertTelinfo.do">[입력]</a></td>
+			<td><a href="sawonInsertTelinfo.do">[입력]</a></td> <!--출력으로 보내기 위한 것. index.js 입력은 하나여야 한다는 것을 위배하지 않게 된다.  -->
 			<td><a href="sawonLoginView.do">[메뉴선택]</a></td>
 			<td><a href="memberLogout.do">[로그아웃]</a></td>
 		</tr>

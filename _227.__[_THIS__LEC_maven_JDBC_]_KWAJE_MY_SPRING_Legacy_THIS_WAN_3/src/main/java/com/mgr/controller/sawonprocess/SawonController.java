@@ -49,7 +49,7 @@ public class SawonController  {
 		return "redirect:getAllTelinfo.do"; 
 	}
 	
-	     //�����Ϸ� 
+	    
 	@RequestMapping("/updateTelinfo.do")
 	public String sawonUpdateTelinfo(TelInfoVO vo1, Model model) //vo1.irum
 			                                  throws ClassNotFoundException, SQLException {

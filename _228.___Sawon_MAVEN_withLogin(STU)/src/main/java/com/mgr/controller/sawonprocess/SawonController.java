@@ -23,11 +23,12 @@ public class SawonController {
 		model1.addAttribute("mAllTelinfo",telinfoService.getAllTelinfo(vo1));
 		return "sawonGetAllTelinfo";//view경로
 	}
-	
+	/////////////////////////////////
 	@RequestMapping(value = "/sawonInsertTelinfo.do", method = RequestMethod.GET, produces="text/plain; charset=UTF-8")
 	public String sawonInsertTelinfo() {
 		return "sawonInsertTelinfo";
 	}
+	/////////////////////////////////////////// sawonInsertTelinfo.jsp 출력 부분에 있게 된다. 
 	
 	@RequestMapping(value = "/sawonLoginView.do", method = RequestMethod.GET, produces="text/plain; charset=UTF-8")
 	public String sawonLoginView() {

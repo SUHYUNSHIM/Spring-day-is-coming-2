@@ -16,7 +16,7 @@
 </head>
 <body>
 <h1>사원정보 입력</h1>
-<form action="insertTelinfo.do">
+<form action="insertTelinfo.do"> <!--다시 controller로 가고 있다. 출력 쪽에서 입력을 처리하고 controller로 간다.  -->
 	<table border="2">
 		<tr>
 			<td>사번</td>
