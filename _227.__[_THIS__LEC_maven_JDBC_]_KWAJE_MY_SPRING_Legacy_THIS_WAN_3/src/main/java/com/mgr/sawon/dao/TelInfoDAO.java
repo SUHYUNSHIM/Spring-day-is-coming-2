@@ -16,7 +16,7 @@ import com.mgr.sawon.vo.TelInfoVO;//////////
 
 
 @Repository    
-public class TelInfoDAO { //³ª´Â com.mgr.sawon.dao ¾Æ·¡ TelInfoDAO.java 
+public class TelInfoDAO { //ï¿½ï¿½ï¿½ï¿½ com.mgr.sawon.dao ï¿½Æ·ï¿½ TelInfoDAO.java 
 	
 	
 	private Connection con;
@@ -30,10 +30,7 @@ public class TelInfoDAO { //³ª´Â com.mgr.sawon.dao ¾Æ·¡ TelInfoDAO.java
 	}
 	
 	
-	
-	
-	
-	// ÀüÃ¼Ãâ·Â           
+	// ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½           
 	public ArrayList <TelInfoVO> getAllTelinfo(TelInfoVO vo1) throws SQLException{
 	ArrayList<TelInfoVO> tiarray = new ArrayList<TelInfoVO>();
 	String sql = "SELECT * FROM TelTable55 ORDER BY id";
@@ -58,13 +55,13 @@ public class TelInfoDAO { //³ª´Â com.mgr.sawon.dao ¾Æ·¡ TelInfoDAO.java
 	
 	
 	
-	 //ÇÑ¸íÃâ·Â        
+	 //ï¿½Ñ¸ï¿½ï¿½ï¿½ï¿½        
 	public TelInfoVO getTelinfo(TelInfoVO vo1) 
-			           throws SQLException { //getTelinfo ´Â ÇÑ¸íÃ³¸® 
+			           throws SQLException { //getTelinfo ï¿½ï¿½ ï¿½Ñ¸ï¿½Ã³ï¿½ï¿½ 
 		TelInfoVO telinfo = null;
 		String sql = "select * from teltable55 where name = ?";
 		pstmt = con.prepareStatement(sql);
-		pstmt.setString(1, vo1.getName());//°Ë»ö 
+		pstmt.setString(1, vo1.getName());//ï¿½Ë»ï¿½ 
 		rs = pstmt.executeQuery();
 		if(rs.next()) {
 			telinfo=new TelInfoVO();//////////////
@@ -73,7 +70,7 @@ public class TelInfoDAO { //³ª´Â com.mgr.sawon.dao ¾Æ·¡ TelInfoDAO.java
 			telinfo.setTel(rs.getString("tel"));
 		}
 		
-		return telinfo;//°´Ã¼´ÜÀ§ 
+		return telinfo;//ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ 
 	}
 	
 	
@@ -102,11 +99,7 @@ public class TelInfoDAO { //³ª´Â com.mgr.sawon.dao ¾Æ·¡ TelInfoDAO.java
 		
 		pstmt.executeUpdate();
 	}	
-	
-	
-	
-	
-	
+		
 	
 	public void deleteTelinfo(TelInfoVO vo1) throws SQLException {
 		String sql = "DELETE TelTable55 WHERE name = ?";

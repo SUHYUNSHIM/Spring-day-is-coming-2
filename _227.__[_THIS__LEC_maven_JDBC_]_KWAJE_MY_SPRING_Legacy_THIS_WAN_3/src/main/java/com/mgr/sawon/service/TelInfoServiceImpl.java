@@ -10,21 +10,16 @@ import org.springframework.stereotype.Service;
 import com.mgr.sawon.dao.TelInfoDAO;
 import com.mgr.sawon.vo.TelInfoVO;
 
-
-
-
-
    
 @Service("TelInfoService")  
-public class TelInfoServiceImpl implements TelInfoService {
-	                 
+public class TelInfoServiceImpl implements TelInfoService {	                 
 	
  
 	@Autowired      
 	private TelInfoDAO telinfoDAO;  
 	 
 	  
-	public ArrayList <TelInfoVO> getAllTelinfo(TelInfoVO vo1) //°´Ã¼´ÜÀ§ ÀÎÀÚ 
+	public ArrayList <TelInfoVO> getAllTelinfo(TelInfoVO vo1) //ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 			      throws ClassNotFoundException, SQLException{
 		return telinfoDAO.getAllTelinfo(vo1);
 	}

@@ -14,14 +14,11 @@ import com.mgr.sawon.service.TelInfoService;
 import com.mgr.sawon.vo.TelInfoVO;
 
 @Controller  
-public class SawonController  { 
-	
-	  
+public class SawonController  {   
 	
 	
 	@Resource(name="TelInfoService") 
-  	private  TelInfoService telInfoService;
-	
+  	private  TelInfoService telInfoService;	
          
    
 	@RequestMapping("/getAllTelinfo.do")
@@ -32,11 +29,7 @@ public class SawonController  {
           return "sawonGetAllTelinfo"; 
 		
 	}
-		
-		
-		
-		
-
+	
 		
 	@RequestMapping("/getTelinfo.do") 
 	public String sawonGetTelinfo(TelInfoVO vo1, Model model1) 
@@ -46,20 +39,7 @@ public class SawonController  {
 		return "sawonGetTelinfo";
 	}          
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	
 	@RequestMapping("/insertTelinfo.do")
 	public String sawonInsertTelinfo(TelInfoVO vo1) 
@@ -69,39 +49,25 @@ public class SawonController  {
 		return "redirect:getAllTelinfo.do"; 
 	}
 	
-	     //¼öÁ¤ÇÏ·Á 
-		@RequestMapping("/updateTelinfo.do")
-	    public String sawonUpdateTelinfo(TelInfoVO vo1, Model model) //vo1.irum
+	     //ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ 
+	@RequestMapping("/updateTelinfo.do")
+	public String sawonUpdateTelinfo(TelInfoVO vo1, Model model) //vo1.irum
 			                                  throws ClassNotFoundException, SQLException {
-		telInfoService.updateTelinfo(vo1); 
+	telInfoService.updateTelinfo(vo1); 
 		
-		
-		return "redirect:getAllTelinfo.do"; 
-		
+	return "redirect:getAllTelinfo.do"; 		
 	
 	}
 	
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	
 	@RequestMapping("/deleteTelinfo.do")
 	public String sawonDeleteTelinfo(TelInfoVO vo1) 
 			                              throws ClassNotFoundException, SQLException {
-		telInfoService.deleteTelinfo(vo1);
+	telInfoService.deleteTelinfo(vo1);
 		
-		
-		return "redirect:getAllTelinfo.do";
+	return "redirect:getAllTelinfo.do";
 	}
-	
-	
 
 	
 }
