@@ -29,3 +29,17 @@ tel varchar2(20)
    commit;
    
    select * from teltable55;
+   
+--   
+SELECT * FROM TAB;
+SELECT * FROM TELTABLE55_MEMBER;
+
+DROP TABLE TELTABLE55_MEMBER;
+
+CREATE TABLE TELTABLE55_MEMBER(
+    ID VARCHAR2(50),
+    PW VARCHAR2(50)
+); 
+commit;
+   
+   
