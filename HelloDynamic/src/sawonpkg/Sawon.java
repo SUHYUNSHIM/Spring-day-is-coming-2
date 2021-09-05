@@ -4,7 +4,8 @@ public class Sawon {
 	private String irum;
 	private String na2;
 	
-	public Sawon() {}
+	public Sawon() {} //디폴트 생성자
+	//getter, setter
 	
 	/*public Sawon(String irum, String na2) {
 		super();
