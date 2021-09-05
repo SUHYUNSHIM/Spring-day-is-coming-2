@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>입력</h2>
-<form action="kaja.jsp" method="post">
+<form action="kaja.jsp" method="post"> <!--값 전송, 페이지 전환  -->
 이름 <input type="text" name="irum"><br>
 나이<input type="text" name ="na2"><br>
 <input type="submit" value="가자 서버로">
