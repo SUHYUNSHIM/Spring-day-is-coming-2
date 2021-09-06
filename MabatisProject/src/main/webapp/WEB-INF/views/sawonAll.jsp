@@ -16,11 +16,14 @@
 		<c:forEach var="imsi" items="${alist}">
 			<tr>
 				<td>${imsi.id }</td>
-				<td>${imsi.name }</td>
+				<td><a href="getTelinfo.do?name=${imsi.name }">${imsi.name }</a>
 				<td>${imsi.tel }</td>
 		</tr>
 		</c:forEach>
 		</tbody>
 		</table>
+		<div>
+		<a href="<c:url value='/sawonInsertForm.do'/>">[사원등록]</a>
+		<a href="<c:url value='/sawonAll.do'/>">[모두보기]</a>
 </body>
 </html>

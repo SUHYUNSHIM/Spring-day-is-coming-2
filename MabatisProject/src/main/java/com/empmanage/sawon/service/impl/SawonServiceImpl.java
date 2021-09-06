@@ -20,6 +20,26 @@ public class SawonServiceImpl implements SawonService{ //SawonServiceImpl.java
 	public ArrayList <SawonVO> getAllSawon(){
 		return sawonkaja.getAllSawon();
 	}			//dao를 찾아간다.
+
+	@Override
+	public void insertSawon(SawonVO sawonVO) {
+		sawonkaja.insertSawon(sawonVO);		
+	}
+
+	@Override
+	public SawonVO getTelinfo(SawonVO sawonVO) {
+		return sawonkaja.getTelinfo(sawonVO);
+	}
+
+	@Override
+	public void updateTelinfo(SawonVO sawonVO) {
+		sawonkaja.updateTelinfo(sawonVO);		
+	}
+
+	@Override
+	public void deleteTelinfo(SawonVO sawonVO) {
+		sawonkaja.deleteTelinfo(sawonVO);		
+	}
 	
 	//select * 이 있을 것이다.
 	//전부 가져와서 종이상자 = resultSet에 넣고 이것을 객체 단위로 해서 넘겨줄 것이다.

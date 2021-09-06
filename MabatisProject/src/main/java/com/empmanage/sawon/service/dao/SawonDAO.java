@@ -7,4 +7,8 @@ import com.empmanage.sawon.vo.SawonVO;
 //mapper interface 참조
 public interface SawonDAO {
 	ArrayList <SawonVO> getAllSawon();
+	void insertSawon(SawonVO sawonVO);
+	SawonVO getTelinfo(SawonVO sawonVO);
+	void updateTelinfo(SawonVO sawonVO);
+	void deleteTelinfo(SawonVO sawonVO);
 }

@@ -2,7 +2,7 @@ package insa;
 
 public class Insa {
 	
-	private String name;
+	private String name; //	생성자로 처리
 	public Insa(String name) {
 		this.name = name;
 	}
