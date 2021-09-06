@@ -16,6 +16,10 @@ public class Hello {
 		/*<<<안녕>>
 		 * 홍길동님
 		 * Hello, Spring
+		 * 
+		 * setter injection : 문자열 전달, 객체 전달
+		 * contructor injection: 문자열 전달, 객체 전달
+		 * 
 		 * */
 	}
 

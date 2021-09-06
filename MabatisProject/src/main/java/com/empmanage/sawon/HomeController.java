@@ -14,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.empmanage.sawon.service.SawonService;
 import com.empmanage.sawon.vo.SawonVO;
 
 /**
@@ -27,7 +28,7 @@ public class HomeController {
 	private SawonService sawonService;
 	
 	@RequestMapping(value="/sawonAll.do")
-	public String sawonAll(Model model) {
+	public String sawonAll(Model model) throws Exception {
 		ArrayList <SawonVO> alist = sawonService.getAllSawon();
 		model.addAttribute("alist",alist);
 		return "sawonAll";

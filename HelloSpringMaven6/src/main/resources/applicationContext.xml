@@ -4,6 +4,13 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	
+	<!--@Autowired는 <property>나 <contruct-arg> 역할로
+	자동으로 같은 이름의 bean을 찾아 injection
+	그러므로 setter, 생성자 선언 필요 없다.  -->
+
+	<!--context:annotation-config는 이미 등록되어 있는 bean에 대해서만 annotation을 활성화함. 그러므로 bean 객체 선언을 해야함  -->
+	<!--context:annotation-config/를 보면 .java에서 @Autowired 등이 사용됨을 짐작할 수 있다.  -->
 
 	<context:annotation-config/>
 	<bean id="insaBean" class="insa.Insa"></bean>

@@ -3,7 +3,15 @@ package insa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
+
+/*@Autowired는 <property>나 <contruct-arg>역할로
+자동으로 같은 이름의 bean을 찾아 injection
+그러므로 setter, 생성자 선언 필요 없음.*/
+
 public class Insa {
+	
+	/* */
+	
 	
 	@Autowired @Value("홍길동")
 	private String name; //setName("홍길동") // p:name= x

@@ -7,5 +7,10 @@
 
 	<!--생성자 주입 방식  -->
 	<bean id="insaBean" class="insa.Insa" c:name="홍길동"/>
-
+	<!--Insa insaBean  = new Insa("홍길동")  -->
+	<!-- <bean id="insaBean" class="insa.Insa">
+		<constructor-arg name="name" value="홍길동"/>
+	</bean> 
+	초기치를 줄 떄 생성자 방식으로 한다.
+	-->
 </beans>
