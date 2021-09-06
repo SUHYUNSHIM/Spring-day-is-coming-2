@@ -13,7 +13,10 @@
 	xml 환경설정 파일에서 객체를 생성하고, 실행 시에는 그 객체들을 갖다 쓰겠다.
 	-->
 	<bean id="bangkaBean1" class="bangka.Bangka1"/>
-	<!--<jsp:useBean id="bangkaBean1" class="bangka.Bangka1"/>  Bangka1 bangkaBean1 = new Bangka1()-->
+	<!-- jsp 에서는 <jsp:useBean id="bangkaBean1" class="bangka.Bangka1"/> . 
+	 Bangka1 bangkaBean1 = new Bangka1()
+	 xml에서는 bean id를 사용해서
+	 -->
 </beans>
 
 
