@@ -29,7 +29,9 @@ tel varchar2(20)
    commit;
    
    select * from teltable55;
-   
+   update teltable55 set name = 'doyoung' where tel is null;
+   update teltable55 set name= 'leedonghyuk' where name = '¿Ãµø«ı';
+   rollback;
 --   
 SELECT * FROM TAB;
 SELECT * FROM TELTABLE55_MEMBER;
