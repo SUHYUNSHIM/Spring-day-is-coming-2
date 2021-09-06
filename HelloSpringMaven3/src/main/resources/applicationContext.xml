@@ -7,6 +7,10 @@
 <!-- 	<bean id="insaBean" class="insa.Insa" p:name="홍길동"></bean> -->
 		<!-- <property name="name" value="홍길동"/> jsp:setProperty . setName("홍길동") -->
 		<bean id="insaBean" class="insa.Insa" p:name="홍길동" p:age="35"></bean>
-		<bean id="setterBean" class="setter.Setter"   p:insa-ref="insaBean"> </bean>  
+		<!--객체 생성+ 초기치. 홍길동이 인자로 전달됨.  -->
 		
+		<bean id="setterBean" class="setter.Setter"   p:insa-ref="insaBean"> </bean>  
+														<!--insaBean 객체 참조변수가 초기치 인자로 전달  -->
+														<!--getBean("setterBean",Setter.class);  -->
+		<!-- Setter setterBean = new Setter(); setterBean.setInsa(insaBEan 객체); -->
 </beans>

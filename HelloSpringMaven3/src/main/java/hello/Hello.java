@@ -15,10 +15,10 @@ public class Hello {
 		GenericXmlApplicationContext gxac1 = new GenericXmlApplicationContext("applicationContext.xml");
 		
 		Insa insa1 = gxac1.getBean("insaBean",Insa.class); //insaBean 객체를 불러들인다. Insa class의 객체.
-		Insa insa2 = gxac1.getBean(Insa.class);
+		Insa insa2 = gxac1.getBean(Insa.class);//가장 확실한 방법. bean이름, type
 		//
-		Insa insa3 =(Insa)gxac1.getBean("insaBean");
-		System.out.println(insa1.insaGo(str1));
+		Insa insa3 =(Insa)gxac1.getBean("insaBean"); //bean 객체 이름으로만 . 기본 반환형은 object
+		System.out.println(insa1.insaGo(str1)); //객체.메소드
 		
 		System.out.println(insa1.helloYou(str1));
 		//

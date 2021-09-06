@@ -5,5 +5,6 @@
 
 <bean id="sawonBean1" class="sawonpkg.Sawon"/><!--  Sawon sawonBean1 = nwe Sawon(); 기본이 싱글톤-->
 <bean id="sawonBean2" class="sawonpkg.Sawon" scope="prototype"/> <!--위 둘은 자동으로 singleton으로 인식  -->
+<!--Sawon sawonBean2 = new Sawon();  -->
 
 </beans>
