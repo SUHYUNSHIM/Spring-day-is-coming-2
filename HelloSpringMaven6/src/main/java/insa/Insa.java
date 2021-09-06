@@ -10,10 +10,11 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Insa {
 	
-	/* */
+	/* private String name;
+	 * 홍길동을 인자로 전달받고 싶다면?
+	 * */	
 	
-	
-	@Autowired @Value("홍길동")
+	@Autowired @Value("홍길동") //필드
 	private String name; //setName("홍길동") // p:name= x
 	//나는 name에다가 mapping 할 것인데 초기치는 홍길동이다.
 	

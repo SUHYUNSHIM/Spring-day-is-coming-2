@@ -26,7 +26,14 @@
 	<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
 </bean>
 
+<!--mapper interface : mapping 파일의 sql call을 위한 interface .
+즉 mapping 파일의 sql을 java interface로 호출하게 해줌.  -->
 <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"> <!--인터페이스가  mapperInterface로 인식된다. java와 DB를 연결해주는 -->
+	<property name="basePackage" value="com.empmanage.sawon.service.dao"/>
+	<!--ArrayList <SawonVO> getALLsawon();  -->
+</bean>
+
+<bean id="transcationManager">
 	<property name="basePackage" value="com.empmanage.sawon.service.dao"/>
 </bean>
 
