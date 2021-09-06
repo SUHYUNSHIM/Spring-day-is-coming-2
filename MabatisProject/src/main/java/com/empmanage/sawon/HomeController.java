@@ -43,11 +43,20 @@ public class HomeController {
 		//입력과 출력을 다른 곳에서 하기 위해서. index.jsp와 다른 곳에 일부러 두었다.
 	}
 	
-	@RequestMapping(value = "/sawonInsert.do")
+	@RequestMapping(value = "/sawonInsert.do") //출력 쪽에서 넘어와서 작업 
 	public String sawonInsert(@ModelAttribute("sawonVO") SawonVO sawonVO, Model model) {
 		sawonService.insertSawon(sawonVO); // --> interface DAO ==> mapper
 		return "redirect:/sawonAll.do";
 	}
+	
+	@RequestMapping(value="/getTelinfo.do")
+	public String sawonGetTelinfo(@ModelAttribute ("sawonVO") SawonVO sawonVO, Model model) {
+		sawonService.getTelinfo(sawonVO);
+		return "sawonGetTelinfo";
+	}
+	//public String sawonGetTelinfo(SawonVO sawonVO, Model model){}
+	//return "redirect:/sawonAll.do";
+	//@ModelAttribute("sawonVO") 객체 단위 id, tel이 포함될 수 있다.
 	
 	
 	
