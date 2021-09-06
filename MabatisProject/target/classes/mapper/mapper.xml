@@ -4,6 +4,7 @@
 
 <!--mapping 될 dao 인터페이스의 full name을 준다. mapper interface
 ArrayList<SawonVO> getAllSawon()  -->
+<!-- mapper interface: dao interface 경로를 namespace로  -->
 <mapper namespace="com.empmanage.sawon.service.dao.SawonDAO">
 	<select id="getAllSawon" resultType="sawonVO">
 	SELECT id
@@ -12,5 +13,23 @@ ArrayList<SawonVO> getAllSawon()  -->
 		 FROM teltable55
 	</select>
 	<!--java 쪽 interface의 getAllSawon() 하고, db 쪽 id = "getAllSawon"하고 일대일 매핑된다.  -->
+	
+	<select id="getTelinfo" resultType="sawonVO">
+		SELECT id,name,tel
+		FROM teltable55 where name=#{name}
+	</select>
+	<!--iBatis :#name#  -->
+	<insert id="insertSawon">
+	 INSERT INTO teltable55
+	 VALUES (#{id},#{name},#{tel})
+	</insert>
+	
+	<update id="updateTelinfo">
+	update TelTable55 set id=#{id}, tel=#{tel} where name=#{name}
+	</update>
+	
+	<delete id="deleteTelinfo">
+	delete from TelTable55 where name=#{name}
+	</delete>
 </mapper>	
 	

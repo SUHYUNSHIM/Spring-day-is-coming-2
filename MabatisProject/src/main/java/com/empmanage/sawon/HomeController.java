@@ -43,6 +43,12 @@ public class HomeController {
 		//입력과 출력을 다른 곳에서 하기 위해서. index.jsp와 다른 곳에 일부러 두었다.
 	}
 	
+	@RequestMapping(value = "/sawonInsert.do")
+	public String sawonInsert(@ModelAttribute("sawonVO") SawonVO sawonVO, Model model) {
+		sawonService.insertSawon(sawonVO); // --> interface DAO ==> mapper
+		return "redirect:/sawonAll.do";
+	}
+	
 	
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
