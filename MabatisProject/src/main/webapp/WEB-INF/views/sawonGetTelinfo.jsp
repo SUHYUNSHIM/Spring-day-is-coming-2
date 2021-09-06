@@ -19,5 +19,12 @@
 	<input type="hidden" name="name" value="${sawonVO.name }">
 	<tr><td colspan="2"><input type = "submit" value="가자 수정"></td></tr>
  	</table>
+ 	</form>
+ 	
+ 	<table border=0>
+ 	<tr><td><a href="sawonAll.do">[모두보기]</a></td>
+ 	<td><a href="deleteTelinfo.do?name=${sawonVO.name }">[삭제]</a>
+ 	</table>
+ 	
 </body>
 </html>

@@ -1,5 +1,6 @@
 package com.empmanage.sawon;
 
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -58,6 +59,20 @@ public class HomeController {
 	//return "redirect:/sawonAll.do";
 	//@ModelAttribute("sawonVO") 객체 단위 id, tel이 포함될 수 있다.
 	
+	@RequestMapping("/updateTelinfo.do")
+	public String sawonUpdateTelinfo(SawonVO sawonVO, Model model) throws ClassNotFoundException,SQLException {
+		sawonService.updateTelinfo(sawonVO);
+		return "redirect:/sawonAll.do";
+	}
+	
+	//삭제 or 수정에서 삭제를 클릭한 경우
+	@RequestMapping("/deleteTelinfo.do")
+	public String sawonDeleteTelinfo(SawonVO sawonVO, Model model) throws ClassNotFoundException, SQLException{
+		sawonService.deleteTelinfo(sawonVO);
+		return "redirect:/sawonAll.do";
+	}
+	
+
 	
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
