@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.mgr.sawon.service.TelInfoService;
 import com.mgr.sawon.vo.TelInfoVO;
 
-@Controller
+@Controller //business logic. bean 객체 생성.
 public class SawonController {
 
 	@Resource(name="TelInfoService")
