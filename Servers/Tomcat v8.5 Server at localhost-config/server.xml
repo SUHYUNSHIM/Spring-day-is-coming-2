@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="HelloDynamic" path="/HelloDynamic" reloadable="true" source="org.eclipse.jst.jee.server:HelloDynamic"/><Context docBase="HelloMVC3" path="/hakjum" reloadable="true" source="org.eclipse.jst.jee.server:HelloMVC3"/><Context docBase="HelloMVC" path="/wri" reloadable="true" source="org.eclipse.jst.jee.server:HelloMVC"/><Context docBase="MVCFor_Test" path="/grade" reloadable="true" source="org.eclipse.jst.jee.server:MVCFor_Test"/><Context docBase="MabatisProject" path="/sawon" reloadable="true" source="org.eclipse.jst.jee.server:MabatisProject"/></Host>
+      <Context docBase="HelloDynamic" path="/HelloDynamic" reloadable="true" source="org.eclipse.jst.jee.server:HelloDynamic"/><Context docBase="HelloMVC3" path="/hakjum" reloadable="true" source="org.eclipse.jst.jee.server:HelloMVC3"/><Context docBase="HelloMVC" path="/wri" reloadable="true" source="org.eclipse.jst.jee.server:HelloMVC"/><Context docBase="MVCFor_Test" path="/grade" reloadable="true" source="org.eclipse.jst.jee.server:MVCFor_Test"/><Context docBase="Sawons" path="/sawon" reloadable="true" source="org.eclipse.jst.jee.server:Sawons"/></Host>
     </Engine>
   </Service>
 </Server>

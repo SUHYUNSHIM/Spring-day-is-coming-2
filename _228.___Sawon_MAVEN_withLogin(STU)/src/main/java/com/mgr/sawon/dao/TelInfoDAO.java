@@ -49,11 +49,11 @@ public class TelInfoDAO {
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
 				TelInfoVO telinfo = new TelInfoVO();
-				telinfo.setId(rs.getInt("id"));
+				telinfo.setId(rs.getInt("id")); // 객체 내용이 들어간다.
 				telinfo.setName(rs.getString("name"));
 				telinfo.setTel(rs.getString("tel"));
 				
-				tiarray.add(telinfo);
+				tiarray.add(telinfo); //ArrayList로 집합.
 			}
 		
 		

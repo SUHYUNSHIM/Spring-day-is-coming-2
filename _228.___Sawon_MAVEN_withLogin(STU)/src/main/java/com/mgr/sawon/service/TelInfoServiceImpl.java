@@ -11,7 +11,7 @@ import com.mgr.sawon.vo.TelInfoVO;
 
 //@Controller 나 dao의 내용을 service가 맡아 business logic 차원에서 확장성 있는 작업을 하게 한다. 인터페이스 형식 == 확장성, 유연성
 //business logic 상세 작업 
-@Service("TelInfoService")  //bean 객체 자동 등록
+@Service("TelInfoService")  //bean 객체 자동 등록. 타입으로 찾기.
 public class TelInfoServiceImpl implements TelInfoService{	
 	//나의 위치는 package com.mgr.sawon.service.
 	//root-context.xml에 com.mgr.sawon을 component-scan
