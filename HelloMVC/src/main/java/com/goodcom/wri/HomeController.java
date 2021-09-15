@@ -56,7 +56,7 @@ public class HomeController {
 		return "kaja"; //반환
 	}
 	
-	//메소드. 소스의 어디에 들어가도 상관없다. moyamota 추가.
+	//메소드. 소스의 어디에 들어가도 상관없다. moyamoya 추가.
 	@RequestMapping(value="/moyamoya.do", method= RequestMethod.POST)
 	public String kaja2(@RequestParam(value="irum", defaultValue="") String irumResult, Model model) {
 		if(irumResult.equals("") || irumResult == null) {
@@ -66,6 +66,7 @@ public class HomeController {
 		model.addAttribute("mirum",irumResult);
 		return "kaja";
 	}
+	
 	@RequestMapping(value="/moyamoya2.do", method=RequestMethod.POST)
 	public String kaja3(@RequestParam(value="irum") String irumResult,
 						@RequestParam(value="tel", defaultValue="") String telResult, Model model){
