@@ -11,8 +11,6 @@ import org.springframework.stereotype.Repository;
 import com.mgr.dbconn.LoginDBConn;
 import com.mgr.login.vo.LoginVO;
 
-
-
 @Repository
 public class LoginDAO {
 

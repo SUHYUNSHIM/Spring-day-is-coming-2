@@ -12,11 +12,7 @@
 	<h1>사원 관리 시작</h1>	<hr>
 	<script>   
 	    location.href="getAllTelinfo.do" 
-	</script>
-	
-	
-	
-	
+	</script>	
 	</body>
 </html>
 

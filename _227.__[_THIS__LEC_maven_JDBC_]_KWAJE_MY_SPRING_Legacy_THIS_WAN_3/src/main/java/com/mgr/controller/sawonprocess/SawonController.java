@@ -22,8 +22,7 @@ public class SawonController  {
          
    
 	@RequestMapping("/getAllTelinfo.do")
-	public String sawonGetAllTelinfo(TelInfoVO vo1, Model model1) 
-			                    throws ClassNotFoundException, SQLException {
+	public String sawonGetAllTelinfo(TelInfoVO vo1, Model model1) throws ClassNotFoundException, SQLException {
 		
           model1.addAttribute("mAllTelinfo", telInfoService.getAllTelinfo(vo1));
           return "sawonGetAllTelinfo"; 

@@ -7,8 +7,6 @@ import com.mgr.login.vo.LoginVO;
 /*import com.mgr.sawon.vo.TelInfoVO;*/
 
 public interface LoginService {
-
-
 	/*public ArrayList <LoginVO> getAllLogin(LoginVO vo1) 
 			               throws ClassNotFoundException, SQLException;
         */
