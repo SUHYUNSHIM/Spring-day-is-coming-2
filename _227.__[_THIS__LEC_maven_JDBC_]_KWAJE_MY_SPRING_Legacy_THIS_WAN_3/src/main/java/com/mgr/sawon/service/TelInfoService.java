@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import com.mgr.sawon.vo.TelInfoVO;/////////////
 
 public interface TelInfoService {
-	             
-	
- 
 	
 	
 	public ArrayList <TelInfoVO> getAllTelinfo(TelInfoVO vo1) 
