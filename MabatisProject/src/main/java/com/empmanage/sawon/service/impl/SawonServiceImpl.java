@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.empmanage.sawon.service.SawonService;
 import com.empmanage.sawon.service.dao.SawonDAO;
 import com.empmanage.sawon.vo.SawonVO;
+//service와 serviceimpl을 한 패키지에 넣었기 떄문에 따로 import할 필요 없음.
 
 @Service("sawonService")
 public class SawonServiceImpl implements SawonService{ //SawonServiceImpl.java
